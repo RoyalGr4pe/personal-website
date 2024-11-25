@@ -22,7 +22,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ text, href }) => {
 
 const Navbar = () => {
 	return (
-		<nav className="fixed left-0 top-0 w-full px-6 py-4 h-12 bg-deepBlue flex justify-center items-center gap-5 sm:gap-8">
+		<nav className="fixed left-0 top-0 w-full px-6 py-4 h-14 bg-deepBlue flex justify-center items-center gap-5 sm:gap-8">
 			<NavbarItem text={"Home"} href={"home"} />
 			<NavbarItem text={"About"} href={"about"} />
 			<NavbarItem text={"Skills"} href={"skills"} />

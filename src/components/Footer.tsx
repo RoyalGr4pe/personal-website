@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className="mt-5 border-0 border-red-500 w-full text-center flex flex-row p-6 sm:flex-col font-semibold">
-			<div className="w-full sm:w-1/2 flex sm:items-start">
+		<footer className="border-0 border-red-500 w-full text-center flex flex-col p-6 sm:flex-row font-semibold">
+			<div className="w-full flex justify-center sm:justify-start">
 				<p className="text-gray-500">© {new Date().getFullYear()} Nick</p>
 			</div>
-			<div className="w-full sm:w-1/2 flex justify-end gap-6">
+			<div className="w-full flex justify-center sm:justify-end gap-6">
 				<FooterLink
 					href="https://github.com/RoyalGr4pe"
 					icon="/github-mark.svg"

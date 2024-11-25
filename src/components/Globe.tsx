@@ -1,5 +1,4 @@
 "use client";
-// components/Globe.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 
@@ -30,7 +29,6 @@ const Globe: React.FC = () => {
 	const [size, setSize] = useState({ width: 0, height: 0 });
 
 	const containerRef = useRef<HTMLDivElement | null>(null);
-  
 
 	const getRandomCoords = (): Ring => ({
 		lat: Math.random() * 180 - 90,
@@ -45,7 +43,6 @@ const Globe: React.FC = () => {
 			!isNaN(coords.lng)
 		);
 	};
-
 
 	// Update size on window resize
 	useEffect(() => {
@@ -97,8 +94,9 @@ const Globe: React.FC = () => {
 		return () => clearInterval(interval);
 	}, []);
 
+
 	return (
-		<div ref={containerRef} className="relative w-full h-[500px] max-h-[600px] overflow-hidden">
+		<div ref={containerRef} className="relative w-full h-full overflow-hidden pointer-events-none">
 			<GlobeGL
 				globeImageUrl="/globe/earth-night.jpg"
 				arcsData={arcsData}
