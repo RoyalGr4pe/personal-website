@@ -47,7 +47,7 @@ const HackingText = () => {
 
 	return (
 		<div className="flex justify-center items-center text-white p-8">
-			<h1 className={`text-xl font-mono`}>{displayText}</h1>
+			<h1 className={`text-xl font-mono text-center`}>{displayText}</h1>
 		</div>
 	);
 };
