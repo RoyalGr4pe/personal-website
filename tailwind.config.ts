@@ -12,7 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
 		darkBlue: "#090a25",
+		deepBlue: "#000011",
 		neonGreen: "#00ffa5"
+      },
+      fontFamily: {
+        sans: ['sans-serif', 'monospace'],
       },
     },
   },
