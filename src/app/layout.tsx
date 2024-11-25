@@ -8,7 +8,7 @@ import '../styles/globals.css';
 
 
 export const metadata: Metadata = {
-	title: "Nick's Portfolio",
+	title: "Portfolio",
 	description: "Welcome to my online portfolio, showcasing innovative projects, skills, and insights into the world of technology and design. Explore my work, passions, and journey in the digital space.",
 };
 

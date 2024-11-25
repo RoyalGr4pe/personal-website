@@ -13,7 +13,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ text, href }) => {
 		  <span className="transition-colors duration-300 ease-in-out text-gray-300 hover:text-white">
 			{text}
 		  </span>
-		  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-yellow-500 to-orange-500 scale-x-0 transition-all duration-300 ease-in-out group-hover:scale-x-100"></span>
+		  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-orange-500 via-orange-700 to-orange-500 scale-x-0 transition-all duration-300 ease-in-out group-hover:scale-x-100"></span>
 		</Link>
 	  </div>
 	);
@@ -31,7 +31,6 @@ const Navbar = () => {
 		</nav>
 	);
 };
-
 
 
 export default Navbar;

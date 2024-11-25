@@ -3,9 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className="border-0 border-red-500 w-full text-center flex flex-col p-6 sm:flex-row font-semibold">
-			<div className="w-full flex justify-center sm:justify-start">
-				<p className="text-gray-500">© {new Date().getFullYear()} Nick</p>
+		<footer className="border-0 border-red-500 w-full text-center flex flex-col p-6 sm:flex-row font-semibold text-gray-500">
+			<div className="w-full flex justify-center sm:justify-start select-none">
+				<p>© {new Date().getFullYear()} Nick</p>
 			</div>
 			<div className="w-full flex justify-center sm:justify-end gap-6">
 				<FooterLink
@@ -23,7 +23,7 @@ export default Footer
 
 const FooterLink = ({ href, icon, text }: { href: string; icon: string; text: string; }) => (
 	<Link
-		className="flex items-center gap-2 text-gray-400 hover:text-white transition-all"
+		className="flex items-center gap-2 transition-all"
 		href={href}
 		target="_blank"
 		rel="noopener noreferrer"

@@ -33,19 +33,19 @@ export default function MainPage() {
 
 
 				{/* About, Skills, Projects, and Contact sections */}
-				<section id="about" className="border-0 px-6 flex items-center justify-center w-full">
+				<section id="about" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
 					<About />
 				</section>
 
-				<section id="skills" className="border-0 px-6 flex items-center justify-center w-full">
+				<section id="skills" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
 					<Skills />
 				</section>
 
-				<section id="projects" className="border-0 px-6 flex items-center justify-center w-full">
+				<section id="projects" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
 					<Projects />
 				</section>
 
-				<section id="contact" className="border-0 px-6 flex items-center justify-center w-full">
+				<section id="contact" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
 					<Contact />
 				</section>
 			</main>

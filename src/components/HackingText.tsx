@@ -5,7 +5,8 @@ import React, { useEffect, useState } from "react";
 const HackingText = () => {
 	const [displayText, setDisplayText] = useState<string>("");
 	const realText = "Empowering Progress Through Technology";
-	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:'\",.<>?/~`";
+	const letters =
+		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 	const revealTextEffect = () => {
 		let iteration = 0;
@@ -46,8 +47,10 @@ const HackingText = () => {
 	}, []);
 
 	return (
-		<div className="flex justify-center items-center text-white p-8">
-			<h1 className={`text-xl font-mono text-center`}>{displayText}</h1>
+		<div className="flex justify-center items-center text-white py-8">
+			<h1 className="text-xl font-mono text-center">
+				{displayText}
+			</h1>
 		</div>
 	);
 };

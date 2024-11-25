@@ -29,6 +29,7 @@ const Globe: React.FC = () => {
 	const [size, setSize] = useState({ width: 0, height: 0 });
 
 	const containerRef = useRef<HTMLDivElement | null>(null);
+	const globeRef = useRef<any>(null);
 
 	const getRandomCoords = (): Ring => ({
 		lat: Math.random() * 180 - 90,
@@ -95,9 +96,25 @@ const Globe: React.FC = () => {
 	}, []);
 
 
+	// Add slow rotation to the globe
+	useEffect(() => {
+		const rotateInterval = setInterval(() => {
+			if (globeRef.current) {
+				const controls = globeRef.current.controls(); // Access camera controls
+				controls.autoRotate = true; // Enable auto-rotation
+				controls.autoRotateSpeed = 0.3; // Slow rotation speed
+				controls.update(); // Trigger control updates
+			}
+		}, 30); // Adjust rotation over time
+
+		return () => clearInterval(rotateInterval); // Clean up interval on unmount
+	}, []);
+
+
 	return (
 		<div ref={containerRef} className="relative w-full h-full overflow-hidden pointer-events-none">
 			<GlobeGL
+				ref={globeRef}
 				globeImageUrl="/globe/earth-night.jpg"
 				arcsData={arcsData}
 				arcColor={() => 'darkOrange'}
