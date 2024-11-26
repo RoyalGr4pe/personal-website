@@ -3,15 +3,20 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className="border-0 border-red-500 w-full text-center flex flex-col p-6 sm:flex-row font-semibold text-gray-500">
+		<footer className="w-full text-center flex flex-col p-6 sm:flex-row font-semibold text-gray-500 gap-2 sm:gap-0">
 			<div className="w-full flex justify-center sm:justify-start select-none">
 				<p>© {new Date().getFullYear()} Nick</p>
 			</div>
 			<div className="w-full flex justify-center sm:justify-end gap-6">
 				<FooterLink
 					href="https://github.com/RoyalGr4pe"
-					icon="/github-mark.svg"
+					icon="/footer/github.svg"
 					text="Github"
+				/>
+				<FooterLink
+					href="https://www.linkedin.com/in/nicholas-james-131906247/"
+					icon="/footer/linkedin.svg"
+					text="LinkedIn"
 				/>
 			</div>
 		</footer>

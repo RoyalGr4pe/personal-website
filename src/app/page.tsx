@@ -17,7 +17,7 @@ export default function MainPage() {
 			</header>
 
 			{/* Main Content */}
-			<main className="h-full mt-14 z-10 flex flex-col items-center w-full flex-1">
+			<main className="h-full mt-14 z-10 flex flex-col items-center w-full flex-1 mb-[400px] md:mb-0">
 				{/* Home and Globe sections */}
 				<div id="home" className="relative w-full grid grid-cols-1 sm:grid-cols-12 sm:grid-rows-none scroll-mt-20 mb-16 sm:mb-0">
 					<section className="border-0 border-green-500 sm:col-span-6 z-20 w-full px-6 sm:px-0 sm:pt-6">
@@ -29,8 +29,6 @@ export default function MainPage() {
 						<Globe />
 					</section>
 				</div>
-
-
 
 				{/* About, Skills, Projects, and Contact sections */}
 				<section id="about" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
@@ -45,7 +43,7 @@ export default function MainPage() {
 					<Projects />
 				</section>
 
-				<section id="contact" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
+				<section id="contact" className="border-0 mb-16 px-6 2xl:px-32 flex items-center justify-center w-full h-full scroll-mt-20">
 					<Contact />
 				</section>
 			</main>

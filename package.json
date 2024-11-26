@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
 		"@emotion/react": "^11.13.5",
 		"@emotion/styled": "^11.13.5",
 		"@mui/icons-material": "^6.1.8",
@@ -16,11 +17,14 @@
 		"@react-spring/web": "^9.7.5",
 		"axios": "^1.7.7",
 		"cobe": "^0.6.3",
+		"emailjs": "^4.0.3",
+		"emailjs-com": "^3.2.0",
 		"framer-motion": "^11.11.17",
 		"next": "15.0.3",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
-		"react-globe.gl": "^2.27.6"
+		"react-globe.gl": "^2.27.6",
+		"tailwindcss-motion": "^0.4.3-beta"
 	},
 	"devDependencies": {
 		"@types/node": "^22.9.3",
