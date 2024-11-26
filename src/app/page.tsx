@@ -17,7 +17,7 @@ export default function MainPage() {
 			</header>
 
 			{/* Main Content */}
-			<main className="mt-14 z-10 flex flex-col items-center w-full flex-1">
+			<main className="h-full mt-14 z-10 flex flex-col items-center w-full flex-1">
 				{/* Home and Globe sections */}
 				<div id="home" className="relative w-full grid grid-cols-1 sm:grid-cols-12 sm:grid-rows-none scroll-mt-20 mb-16 sm:mb-0">
 					<section className="border-0 border-green-500 sm:col-span-6 z-20 w-full px-6 sm:px-0 sm:pt-6">
@@ -37,7 +37,7 @@ export default function MainPage() {
 					<About />
 				</section>
 
-				<section id="skills" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
+				<section id="skills" className="border-0 px-6 flex items-center justify-center w-full scroll-mt-20">
 					<Skills />
 				</section>
 

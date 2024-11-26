@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import "@/styles/blinking-cursor.css"
 
 const HackingText = () => {
 	const [displayText, setDisplayText] = useState<string>("");
+	const [isAnimationComplete, setIsAnimationComplete] = useState<boolean>(false);
 	const realText = "Empowering Progress Through Technology";
-	const letters =
-		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+	const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 	const revealTextEffect = () => {
 		let iteration = 0;
@@ -34,6 +35,7 @@ const HackingText = () => {
 			// When all letters are revealed, stop the interval
 			if (iteration >= realText.length) {
 				clearInterval(interval);
+				setIsAnimationComplete(true); // Indicate animation is complete
 			}
 
 			// Increment the iteration to reveal the next letter
@@ -50,6 +52,11 @@ const HackingText = () => {
 		<div className="flex justify-center items-center text-white py-8">
 			<h1 className="text-xl font-mono text-center">
 				{displayText}
+				{isAnimationComplete ? (
+					<span className="animate-blink">|</span>
+				) : (
+					<span>&#x2003;</span> // Unicode for an em space
+				)}
 			</h1>
 		</div>
 	);
