@@ -13,7 +13,7 @@ const Forest = () => {
         <img src="/contact/deer.svg" alt="Deer" className="absolute bottom-0" />
         
         {/* Bird */}
-        <img src="/contact/eagle.svg" alt="Bird" className="absolute right-0" />
+        <img src="/contact/humming-bird.svg" alt="Bird" className="absolute right-0 top-10" />
       </div>
   );
 };
