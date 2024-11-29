@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
 
 const Skills = () => {
 	const currentYear = new Date().getFullYear();
@@ -64,7 +63,7 @@ const Skills = () => {
 	];
 
 	return (
-		<div className="text-white p-8 max-w-5xl">
+		<div className="text-white p-8">
 			<h1 className="mb-8 text-center">Skills</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				{skills.map((skill, index) => (

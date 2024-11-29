@@ -17,9 +17,9 @@ export default function MainPage() {
 			</header>
 
 			{/* Main Content */}
-			<main className="h-full mt-14 z-10 flex flex-col items-center w-full flex-1 mb-[400px] md:mb-0">
+			<main className="h-full mt-14 z-10 flex flex-col gap-24 items-center w-full flex-1 mb-[400px] md:mb-0">
 				{/* Home and Globe sections */}
-				<div id="home" className="relative w-full grid grid-cols-1 sm:grid-cols-12 sm:grid-rows-none scroll-mt-20 mb-16 sm:mb-0">
+				<div id="home" className="relative w-full grid grid-cols-1 sm:grid-cols-12 sm:grid-rows-none scroll-mt-20 mb-24 sm:mb-0">
 					<section className="border-0 border-green-500 sm:col-span-6 z-20 w-full px-6 sm:px-0 sm:pt-6">
 						<Home />
 					</section>
@@ -31,15 +31,15 @@ export default function MainPage() {
 				</div>
 
 				{/* About, Skills, Projects, and Contact sections */}
-				<section id="about" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
+				<section id="about" className="border-0 flex items-center justify-center max-w-5xl scroll-mt-20">
 					<About />
 				</section>
 
-				<section id="skills" className="border-0 px-6 flex items-center justify-center w-full scroll-mt-20">
+				<section id="skills" className="border-0 flex items-center justify-center max-w-5xl scroll-mt-20">
 					<Skills />
 				</section>
 
-				<section id="projects" className="border-0 px-6 flex items-center justify-center w-full h-[500px] scroll-mt-20">
+				<section id="projects" className="border-0 flex items-center justify-center max-w-5xl scroll-mt-20">
 					<Projects />
 				</section>
 
